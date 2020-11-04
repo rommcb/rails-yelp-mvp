@@ -1,6 +1,6 @@
 <%= simple_form_for @restaurant do |f| %>
   <%= f.input :name %>
-  <%= f.input :category %>
+  <%= f.input :category, collection: Restaurant::CATEGORIES %>
   <%= f.input :address %>
   <%= f.input :phone_number, placeholder: '+32471234567'%>
   <%= f.button :submit, class: 'btn btn-primary' %>
